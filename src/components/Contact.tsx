@@ -29,7 +29,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Adresse',
-      details: ['123 Avenue Habib Bourguiba', 'Tunis 1000, Tunisie']
+      details: ['Rond point Globe Terrestre Route de ceinture', '4081-Zaouiet Sousse']
     },
     {
       icon: Phone,
