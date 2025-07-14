@@ -63,7 +63,7 @@ const Contact = () => {
           <img src="/images/legrand.png" alt="Legrand Logo" className="h-10 w-auto" />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-8">Informations de Contact</h3>

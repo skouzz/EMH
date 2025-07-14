@@ -6,35 +6,35 @@ const Products = () => {
       icon: Zap,
       title: 'Interrupteurs & Prises',
       description: 'Gamme complète d\'interrupteurs, prises et appareillage électrique Legrand',
-      image: 'https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+      image: '/images/prise.jpg',
       products: ['Interrupteurs design', 'Prises USB', 'Variateurs', 'Détecteurs de mouvement']
     },
     {
       icon: Home,
       title: 'Domotique',
       description: 'Solutions intelligentes pour la maison connectée et l\'automatisation',
-      image: 'https://images.pexels.com/photos/8092/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+      image: '/images/domotique.jpg',
       products: ['Systèmes MyHOME', 'Éclairage connecté', 'Volets automatiques', 'Contrôle centralisé']
     },
     {
       icon: Wifi,
       title: 'Réseaux & Communication',
       description: 'Infrastructure réseau et solutions de communication avancées',
-      image: 'https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+      image: '/images/cablage.jpg',
       products: ['Câblage structuré', 'Coffrets réseau', 'Fibre optique', 'Solutions Wi-Fi']
     },
     {
       icon: Cable,
       title: 'Câblage & Goulottes',
       description: 'Solutions de câblage et protection des installations électriques',
-      image: 'https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+      image: '/images/cablage.jpg',
       products: ['Goulottes design', 'Chemins de câbles', 'Conduits', 'Accessoires de fixation']
     },
     {
       icon: Shield,
       title: 'Protection Électrique',
       description: 'Dispositifs de protection et sécurité électrique',
-      image: 'https://images.pexels.com/photos/5691659/pexels-photo-5691659.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+      image: '/images/protection.jpg',
       products: ['Disjoncteurs', 'Parafoudres', 'Différentiels', 'Tableaux électriques']
     },
     {
@@ -57,7 +57,7 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category, index) => (
             <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group hover:-translate-y-2">
               <div className="relative overflow-hidden">
@@ -95,7 +95,7 @@ const Products = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-10 sm:mt-16 text-center">
           <div className="bg-gray-50 rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Besoin d'un Devis Personnalisé ?</h3>
             <p className="text-gray-600 mb-6">

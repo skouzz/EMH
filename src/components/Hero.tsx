@@ -5,21 +5,21 @@ const Hero = () => {
   return (
     <section id="accueil" className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
       <div className="absolute inset-0 bg-black opacity-50"></div>
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 lg:py-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight text-center lg:text-left">
               Solutions Électriques et 
               <span className="text-red-500"> Domotiques</span> de Confiance
             </h1>
             <div className="flex items-center justify-center mb-4">
-              <img src="/images/legrandwhite.png" alt="Legrand Logo" className="h-24 w-auto" />
+              <img src="/images/legrandwhite.png" alt="Legrand Logo" className="h-12 sm:h-16 md:h-20 lg:h-24 w-auto" />
             </div>
-            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+            <p className="text-base sm:text-xl text-gray-300 mb-8 leading-relaxed text-center lg:text-left">
               Distributeur officiel Legrand en Tunisie, EMH vous accompagne dans tous vos projets 
               électriques, domotiques et de réseaux avec expertise et professionnalisme.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
                 href="#produits"
                 className="inline-flex items-center px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"

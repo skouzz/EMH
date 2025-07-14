@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="mb-6">
@@ -33,7 +33,7 @@ const Footer = () => {
                 <img 
                   src="/images/EMH.jpg" 
                   alt="EMH Logo" 
-                  className="h-20 w-auto mb-4 bg-white p-2 rounded"
+                  className="h-12 sm:h-16 md:h-20 w-auto mb-4 bg-white p-2 rounded"
                 />
               </Link>
               <h3 className="text-xl font-bold mb-2">EMH</h3>
@@ -145,7 +145,7 @@ const Footer = () => {
 
         {/* Legrand Partnership */}
         <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row items-center justify-between">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
             <div className="flex items-center space-x-4 mb-4 md:mb-0">
               <div className="text-sm text-gray-300">
                 <span className="font-semibold text-red-400">Partenaire Officiel:</span>
@@ -169,7 +169,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row items-center justify-between">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
             <div className="text-sm text-gray-400 mb-4 md:mb-0">
               © {currentYear} EMH - Établissement Mohamed Hertilli. Tous droits réservés.
             </div>

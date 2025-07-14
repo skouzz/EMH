@@ -32,17 +32,17 @@ const About = () => {
   ];
 
   return (
-    <section id="apropos" className="py-20 bg-gray-50">
+    <section id="apropos" className="py-12 sm:py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">À Propos d'EMH</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-4">À Propos d'EMH</h2>
+          <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Distributeur officiel Legrand, nous sommes votre partenaire de confiance pour tous vos besoins 
             en solutions électriques, domotiques et de réseaux.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-10 sm:mb-16">
           <div>
             <h3 className="text-3xl font-bold text-gray-900 mb-6">Notre Mission</h3>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
@@ -54,11 +54,11 @@ const About = () => {
               les systèmes électriques et les solutions industrielles. Notre expertise nous permet 
               d'accompagner nos clients depuis la conception jusqu'à la réalisation de leurs projets.
             </p>
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 mb-6 sm:mb-0">
               <img 
                 src="/images/legrand.png" 
                 alt="Legrand Partnership" 
-                className="h-16 w-auto"
+                className="h-10 sm:h-12 md:h-16 w-auto"
               />
               <div>
                 <p className="font-semibold text-gray-900">Partenariat Officiel</p>
@@ -67,7 +67,7 @@ const About = () => {
             </div>
           </div>
           
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-4 sm:gap-6">
             {stats.map((stat, index) => (
               <div key={index} className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="text-3xl font-bold text-red-600 mb-2">{stat.number}</div>
@@ -77,7 +77,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {values.map((value, index) => (
             <div key={index} className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-4">

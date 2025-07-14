@@ -27,8 +27,8 @@ const Header = () => {
       {/* Top bar */}
       <div className="bg-gray-900 text-white py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center text-sm">
-            <div className="flex items-center space-x-6">
+          <div className="flex flex-col sm:flex-row justify-between items-center text-sm gap-2 sm:gap-0">
+            <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-6 w-full sm:w-auto">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
                 <a href="tel:+216xxxxxxx" className="hover:text-red-400 transition-colors">
@@ -42,9 +42,9 @@ const Header = () => {
                 </a>
               </div>
             </div>
-            <div className="text-red-400 font-medium flex items-center space-x-2">
-              <img src="/images/legrandwhite.png" alt="Legrand Logo" className="h-12 w-auto" />
-              <span>Distributeur Officiel Legrand</span>
+            <div className="text-red-400 font-medium flex items-center space-x-2 mt-2 sm:mt-0">
+              <img src="/images/legrandwhite.png" alt="Legrand Logo" className="h-5 sm:h-6 md:h-8 w-auto" />
+              <span className="text-xs sm:text-sm md:text-base">Distributeur Officiel Legrand</span>
             </div>
           </div>
         </div>
@@ -52,13 +52,13 @@ const Header = () => {
 
       {/* Main header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex flex-col sm:flex-row justify-between items-center py-4 gap-2 sm:gap-0">
           <div className="flex items-center">
             <Link to="/">
               <img 
                 src="/images/EMH.jpg" 
                 alt="EMH Logo" 
-                className="h-20 w-auto"
+                className="h-10 sm:h-14 md:h-16 w-auto"
               />
             </Link>
           </div>

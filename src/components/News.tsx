@@ -58,7 +58,7 @@ const News = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {articles.map((article, index) => (
             <article key={index} className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group hover:-translate-y-2">
               <div className="relative overflow-hidden">
@@ -113,7 +113,7 @@ const News = () => {
             <p className="text-gray-600 mb-6">
               Recevez nos dernières actualités, conseils techniques et offres spéciales directement dans votre boîte mail.
             </p>
-            <div className="max-w-md mx-auto flex gap-4">
+            <div className="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
               <input
                 type="email"
                 placeholder="Votre adresse email"
