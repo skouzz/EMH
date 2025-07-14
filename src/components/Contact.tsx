@@ -86,13 +86,18 @@ const Contact = () => {
               ))}
             </div>
 
-            {/* Map placeholder */}
-            <div className="bg-gray-300 rounded-xl h-64 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="h-12 w-12 text-gray-500 mx-auto mb-2" />
-                <p className="text-gray-600">Carte Google Maps</p>
-                <p className="text-sm text-gray-500">Localisation EMH</p>
-              </div>
+            {/* Google Maps */}
+            <div className="rounded-xl overflow-hidden h-64 shadow-lg">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d352.44684628384584!2d10.621157697010663!3d35.79848737734516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2stn!4v1752534278837!5m2!1sfr!2stn" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="EMH Location - Rond point Globe Terrestre Route de ceinture, 4081-Zaouiet Sousse"
+              ></iframe>
             </div>
           </div>
 
